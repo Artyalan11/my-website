@@ -9,54 +9,56 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header"
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="img/logo.png" alt="Logo de http://leonidasesteban.com">
             </figure>
         </div>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li>
-                    <a href="#">Portafolio</a>
+                    <a class="link" href="#">Portafolio</a>
                 </li>
                 <li>
-                    <a href="#">Experiencia</a>
+                    <a class="link" href="#">Experiencia</a>
                 </li>
                 <li>
-                    <a href="#">Trabajemos juntos</a>
+                    <a class="link" href="#">Trabajemos juntos</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
+    <section class="hero">
         <h1>Hola! Soy <strong>Fabricio Guzmán</strong> <br> Desarrollador <strong>Frontend Jr</strong></h1>
         <img src="img/hero.jpg" alt="imagen principal del sitio" width="500px" height="300">
     </section>
-    <section>
+    <section id="portafolio" class="portfolio">
         <h2>Portafolio (Proyectos Destacados)</h2>
-        <article>
-            <h3>Platzi video</h3>
-            <h6>React Native / React</h6>
-            <p><small><strong>Fecha:</strong> 01/07/2018</small></p>
-            <p><small><strong>Puedes verlo:</strong> www.platzi/native</small></p>
-            <p>Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, esté proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
-            <img src="img/platzi-video-react-native.png" alt="proyecto del curso de react native" width="500">
-        </article>
-    </section>
-    <section>
-        <h2>Más sobre mi experiencia</h2>
-        <article>
-            <figure>
-                <img src="img/platzi-conf.jpg" alt="Imagen de la platziconf" width="500"/>
+        <article class="project">
+            <h3 class="project-title">Platzi video</h3>
+            <h6 class="project-course">React Native / React</h6>
+            <p class="project-date"><small><strong>Fecha:</strong> 01/07/2018</small></p>
+            <p class="project-url"><small><strong>Puedes verlo:</strong> www.platzi/native</small></p>
+            <p class="project-description">Platzi Video fue el resultado de 3 meses de trabajo para crear la mejor app para enseñar el funcionamiento de React y React Native. Desde crear un vista-detalle, hasta patrones avanzados de navegación, esté proyecto ha sido el ejemplo de futuros creadores de aplicaciones multiplataforma</p>
+            <figure class="project-imageContainer">
+                <img class="project-image" src="img/platzi-video-react-native.png" alt="proyecto del curso de react native" width="500">
             </figure>
-            <h3>PlatziConf México 2018</h3>
-            <p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje</p>
-            <a href="#">Ver plática</a>
         </article>
     </section>
-    <section>
-        <form action="/suscripcion">
+    <section id="eventos">
+        <h2>Más sobre mi experiencia</h2>
+        <article class="event">
+            <figure class="event-imageContainer">
+                <img class="event-image" src="img/platzi-conf.jpg" alt="Imagen de la platziconf" width="500"/>
+            </figure>
+            <h3 class="event-title">PlatziConf México 2018</h3>
+            <p class="event-description"></p>El evento más grande sobre gente que quiere aprender más de internet. En esté evento te comparto como tener una vida de constante aprendizaje</p>
+            <a class="event-url" href="#">Ver plática</a>
+        </article>
+    </section>
+    <section id="contacto" class="contact">
+        <form action="/suscripcion" class="form-email">
             <h3>¿Creamos algo juntos?</h3>
             <label for="email">Déjame tu email</label>
             <input type="text" placeholder="Déjame tu email" id="email">
@@ -64,6 +66,6 @@
             <!-- <button>Enviar</button> -->
         </form>
     </section>
-    <footer>footer</footer>
+    <footer class="footer">footer</footer>
 </body>
 </html>
