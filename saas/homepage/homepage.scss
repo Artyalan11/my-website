@@ -1,5 +1,6 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px;
 }
 
 h1,h2,h3,h5,h6{
@@ -19,16 +20,27 @@ h1,h2,h3,h5,h6{
         line-height: 1.5;
         letter-spacing: -.2px;
         color: $white;
-        strong{
+        margin: 100px 150px 70px 30px;
+        strong{ 
             color: $light-blue;
         }
+    }
+}
+.portfolio{
+    background: $light-gray-background;
+    h2{
+
     }
 }
 
 .project{
     border: 1px solid gray;
     border-radius: 10px;
-    border-top-left-radius: 50px;
+    border-radius: 35px; 
+    padding: 20px;
+    margin: 10px;
+    margin-bottom: 15px;
+    background: $white;
     .project-details{
         width: 500px;
     }

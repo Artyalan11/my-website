@@ -1,5 +1,6 @@
 body {
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0px; }
 
 h1, h2, h3, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
@@ -16,14 +17,22 @@ h1, h2, h3, h5, h6 {
     font-size: 40px;
     line-height: 1.5;
     letter-spacing: -.2px;
-    color: #fff; }
+    color: #fff;
+    margin: 100px 150px 70px 30px; }
     .hero h1 strong {
       color: #026fff; }
+
+.portfolio {
+  background: #fafafa; }
 
 .project {
   border: 1px solid gray;
   border-radius: 10px;
-  border-top-left-radius: 50px; }
+  border-radius: 35px;
+  padding: 20px;
+  margin: 10px;
+  margin-bottom: 15px;
+  background: #fff; }
   .project .project-details {
     width: 500px; }
   .project .project-imageContainer {
