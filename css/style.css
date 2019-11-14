@@ -32,7 +32,10 @@ h1, h2, h3, h5, h6 {
   padding: 20px;
   margin: 10px;
   margin-bottom: 15px;
-  background: #fff; }
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .project .project-details {
     width: 500px; }
   .project .project-imageContainer {

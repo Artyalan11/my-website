@@ -28,9 +28,6 @@ h1,h2,h3,h5,h6{
 }
 .portfolio{
     background: $light-gray-background;
-    h2{
-
-    }
 }
 
 .project{
@@ -41,6 +38,7 @@ h1,h2,h3,h5,h6{
     margin: 10px;
     margin-bottom: 15px;
     background: $white;
+    display: flex;
     .project-details{
         width: 500px;
     }
