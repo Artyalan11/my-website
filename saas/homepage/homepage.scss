@@ -15,12 +15,16 @@ h1,h2,h3,h5,h6{
     background-repeat: no-repeat;
     background-position-x: right;
     background-color: $background-gray;
+    display: flex;
+    align-items: center;
+
     h1{
         font-size: 40px;
         line-height: 1.5;
         letter-spacing: -.2px;
         color: $white;
-        margin: 100px 150px 70px 30px;
+        // margin: 100px 150px 70px 30px;
+        margin: 0;
         strong{ 
             color: $light-blue;
         }
