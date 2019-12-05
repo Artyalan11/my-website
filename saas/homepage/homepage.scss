@@ -8,6 +8,15 @@ h1,h2,h3,h5,h6{
     font-weight: normal;
 }
 
+h2{
+    color: $light-blue;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
 .hero{
     height: 300px;
     background-image: url('../img/hero.jpg');
@@ -32,21 +41,78 @@ h1,h2,h3,h5,h6{
 }
 .portfolio{
     background: $light-gray-background;
-}
-
-.project{
+    padding: 20px;
+    .project{
     border: 1px solid gray;
     border-radius: 10px;
     border-radius: 35px; 
     padding: 20px;
-    margin: 10px;
     margin-bottom: 15px;
     background: $white;
     display: flex;
-    .project-details{
-        width: 500px;
+    align-items: center;
+    justify-content: space-between;
+        .project-title{
+            font-size: 30px;
+            margin: 0 0 10px 0;
+        }
+        .project-details{
+            width: 500px;
+        }
+        .project-imageContainer{
+            width: 500px;
+        }
+        .project-course, .project-date, .project-url{
+            margin: 10px 0;
+        }
+        .project-description{
+            font-size: 20px;
+
+        }
+        strong{
+            font-family: 'Fjalla One', sans-serif;
+        }
     }
-    .project-imageContainer{
-        width: 500px;
+
+}
+
+.event-list-title{
+    margin: 20px;
+}
+.event-list{
+    display: flex;
+    .event{
+        margin: 10px;
+        width: 480px;
+        border-radius: 10px;
+        overflow: hidden;
+        flex-shrink: 0; //ocupan el tamaño designado , no apachurrarse
+        background-color: $sky-blue;
+        .event-imageContainer{
+            margin: 0;     
+            img{
+                width: 480px;
+                height: 200px;
+                object-fit: cover; //cambia proporción de imagen dependiendo alto y ancho que tenga el elemento
+            }
+        }
+        .event-detail{
+            margin: 20px 40px;
+            margin-top: -40px;
+            background-color: $white;
+            position: relative;
+            padding: 20px;
+            text-align: center;
+            .event-description{
+                text-align: left;
+            }
+            .event-url{
+                color: $light-blue;
+                border: 1px solid;
+                padding: 5px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+            }
+        }
     }
 }

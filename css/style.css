@@ -6,6 +6,14 @@ h1, h2, h3, h5, h6 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: normal; }
 
+h2 {
+  color: #056fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px; }
+
 .hero {
   height: 300px;
   background-image: url("../img/hero.jpg");
@@ -26,26 +34,78 @@ h1, h2, h3, h5, h6 {
     color: #fff;
     margin: 0; }
     .hero h1 strong {
-      color: #026fff; }
+      color: #056fff; }
 
 .portfolio {
-  background: #fafafa; }
+  background: #fafafa;
+  padding: 20px; }
+  .portfolio .project {
+    border: 1px solid gray;
+    border-radius: 10px;
+    border-radius: 35px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .portfolio .project .project-title {
+      font-size: 30px;
+      margin: 0 0 10px 0; }
+    .portfolio .project .project-details {
+      width: 500px; }
+    .portfolio .project .project-imageContainer {
+      width: 500px; }
+    .portfolio .project .project-course, .portfolio .project .project-date, .portfolio .project .project-url {
+      margin: 10px 0; }
+    .portfolio .project .project-description {
+      font-size: 20px; }
+    .portfolio .project strong {
+      font-family: 'Fjalla One', sans-serif; }
 
-.project {
-  border: 1px solid gray;
-  border-radius: 10px;
-  border-radius: 35px;
-  padding: 20px;
-  margin: 10px;
-  margin-bottom: 15px;
-  background: #fff;
+.event-list-title {
+  margin: 20px; }
+
+.event-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .project .project-details {
-    width: 500px; }
-  .project .project-imageContainer {
-    width: 500px; }
+  .event-list .event {
+    margin: 10px;
+    width: 480px;
+    border-radius: 10px;
+    overflow: hidden;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    background-color: #f4fbff; }
+    .event-list .event .event-imageContainer {
+      margin: 0; }
+      .event-list .event .event-imageContainer img {
+        width: 480px;
+        height: 200px;
+        -o-object-fit: cover;
+        object-fit: cover; }
+    .event-list .event .event-detail {
+      margin: 20px 40px;
+      margin-top: -40px;
+      background-color: #fff;
+      position: relative;
+      padding: 20px;
+      text-align: center; }
+      .event-list .event .event-detail .event-description {
+        text-align: left; }
+      .event-list .event .event-detail .event-url {
+        color: #056fff;
+        border: 1px solid;
+        padding: 5px 20px;
+        text-decoration: none;
+        border-radius: 5px; }
 
 .header {
   background-color: #1b2127;
