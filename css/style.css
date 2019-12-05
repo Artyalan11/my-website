@@ -107,6 +107,55 @@ h2 {
         text-decoration: none;
         border-radius: 5px; }
 
+.contact {
+  background-color: #056fff;
+  color: #fff;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+  .contact .social .social-link {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-size: 50px 50px;
+    margin: 0 10px; }
+    .contact .social .social-link.twitter {
+      background-image: url(../img/twitter.svg); }
+    .contact .social .social-link.facebook {
+      background-image: url(../img/facebook.svg); }
+    .contact .social .social-link.github {
+      background-image: url(../img/github.svg); }
+    .contact .social .social-link.instagram {
+      background-image: url(../img/instagram.svg); }
+  .contact .form-email h3 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold; }
+  .contact .form-email input {
+    border-color: #626262;
+    border-style: solid;
+    border-radius: 5px;
+    padding: 10px 20px 10px 25px;
+    background-size: 15px 15px;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: 5px; }
+    .contact .form-email input.button {
+      display: block;
+      background: transparent;
+      color: #fff;
+      padding: 10px 0;
+      border-radius: 5px;
+      width: 100px;
+      margin-top: 10px;
+      border: 1px solid #fff; }
+
 .header {
   background-color: #1b2127;
   color: #fff;
