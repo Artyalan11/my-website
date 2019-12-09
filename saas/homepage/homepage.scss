@@ -19,13 +19,17 @@ h2{
 
 .hero{
     height: 300px;
-    background-image: url('../img/hero.jpg');
-    background-size: 500px 300px;
-    background-repeat: no-repeat;
-    background-position-x: right;
+    // background-image: url('../img/hero.jpg');
+    // background-size: 500px 300px;
+    // background-repeat: no-repeat;
+    // background-position-x: right;
     background-color: $background-gray;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    .hero-image{
+        object-fit: cover;
+    }
 
     h1{
         font-size: 40px;
@@ -81,6 +85,7 @@ h2{
 }
 .event-list{
     display: flex;
+    flex-wrap: wrap;
     .event{
         margin: 10px;
         width: 480px;
@@ -154,11 +159,13 @@ h2{
          border-color: $light-gray;
          border-style: solid;
          border-radius: 5px;
-         padding: 10px 20px 10px 25px;
+         padding: 5px 20px 5px 25px;
+         background-image: url('../img/envelope.svg');
          background-size: 15px 15px;
          background-repeat: no-repeat;
          background-position-y: center;
          background-position-x: 5px;
+         border: 1px solid $light-gray;
         &.button{
             display: block;
             background: transparent;
@@ -166,10 +173,21 @@ h2{
             padding: 10px 0;
             border-radius: 5px;
             width: 100px;
-            margin-top: 10px;
             border: 1px solid $white;
+            margin-top: 10px;
+            // border: 2px solid $light-gray;
         }
      }
 
  }
+}
+
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    display: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
 }
