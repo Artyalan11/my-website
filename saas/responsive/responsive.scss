@@ -1,0 +1,36 @@
+// Si empiezas con desktop first empieza con la mayor resolucion 
+
+@media screen and (max-width: 1024px){
+    
+}
+
+@media screen and (max-width: 767px){
+
+    .header{
+        display: block;
+        height: auto;
+        .menu{
+            ul{
+                display: block;
+                li{
+                    height: 50px;
+                    text-align: center;
+                    a {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .logo{
+            text-align: center;
+        }
+    }
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (max-width: 320px){
+
+}

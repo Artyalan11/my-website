@@ -25,7 +25,9 @@ h2 {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .hero .hero-image {
     -o-object-fit: cover;
     object-fit: cover; }
@@ -56,7 +58,9 @@ h2 {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
     .portfolio .project .project-title {
       font-size: 30px;
       margin: 0 0 10px 0; }
@@ -123,7 +127,9 @@ h2 {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .contact .social .social-link {
     width: 50px;
     height: 50px;
@@ -163,7 +169,10 @@ h2 {
       margin-top: 10px; }
 
 .container {
-  width: 1000px;
+  max-width: 1000px;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   margin: 0 auto;
   display: inherit;
   -webkit-box-pack: inherit;
@@ -188,7 +197,9 @@ h2 {
   height: 70px;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center; }
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .header .menu {
     height: inherit; }
     .header .menu ol, .header .menu ul {
@@ -226,8 +237,26 @@ h2 {
   align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
   .footer img {
     vertical-align: middle; }
   .footer a {
     color: #fff; }
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto; }
+    .header .menu ul {
+      display: block; }
+      .header .menu ul li {
+        height: 50px;
+        text-align: center; }
+        .header .menu ul li a {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+    .header .logo {
+      text-align: center; } }
