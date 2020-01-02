@@ -65,9 +65,13 @@ h2 {
       font-size: 30px;
       margin: 0 0 10px 0; }
     .portfolio .project .project-details {
-      width: 500px; }
+      width: 50%; }
     .portfolio .project .project-imageContainer {
-      width: 500px; }
+      width: 50%;
+      margin: 0; }
+      .portfolio .project .project-imageContainer img {
+        max-width: 100%;
+        width: 100%; }
     .portfolio .project .project-course, .portfolio .project .project-date, .portfolio .project .project-url {
       margin: 10px 0; }
     .portfolio .project .project-description {
@@ -85,8 +89,8 @@ h2 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap; }
   .event-list .event {
-    margin: 10px;
-    width: 480px;
+    margin: 1%;
+    width: 48%;
     border-radius: 10px;
     overflow: hidden;
     -ms-flex-negative: 0;
@@ -259,4 +263,39 @@ h2 {
           -ms-flex-pack: center;
           justify-content: center; }
     .header .logo {
-      text-align: center; } }
+      text-align: center; }
+  .portfolio .project {
+    display: block; }
+    .portfolio .project .project-imageContainer {
+      width: auto;
+      text-align: center; }
+    .portfolio .project .project-details {
+      width: auto;
+      font-size: 16px; }
+      .portfolio .project .project-details .project-title {
+        font-size: 1.5em;
+        margin-bottom: 0.3em; }
+      .portfolio .project .project-details .project-url {
+        font-size: 1em;
+        margin: .4em 0; }
+      .portfolio .project .project-details .project-course {
+        font-size: 1em;
+        margin: .4em 0; }
+      .portfolio .project .project-details .project-date {
+        font-size: 0.7em;
+        margin: .4em 0; }
+      .portfolio .project .project-details .project-description {
+        font-size: 0.8em; }
+  .event-list .event {
+    width: auto;
+    -ms-flex-negative: initial;
+    flex-shrink: initial; }
+    .event-list .event .event-imageContainer .event-image {
+      width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .portfolio .project .project-details {
+    font-size: 12px; }
+  .event-list .event .event-detail {
+    margin: -2em .5em .5em;
+    padding: 1em; } }

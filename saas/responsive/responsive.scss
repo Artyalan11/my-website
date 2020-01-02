@@ -25,10 +25,72 @@
             text-align: center;
         }
     }
+
+    .portfolio{
+        .project{
+            display: block;
+            .project-imageContainer{
+                width: auto;
+                text-align: center;
+            }
+            .project-details{
+                width: auto;
+                font-size: 16px;
+                .project-title{
+                    font-size: 1.5em;
+                    margin-bottom: 0.3em;
+                }
+                .project-url{
+                    font-size: 1em;
+                    margin: .4em 0;
+                }
+                .project-course{
+                    font-size: 1em;
+                    margin: .4em 0;
+                }
+                .project-date{
+                    font-size: 0.7em;
+                    margin: .4em 0;
+                }
+                .project-description{
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+    .event-list{
+        .event{
+            width: auto;
+            flex-shrink: initial;
+            .event-imageContainer{
+                .event-image{
+                    width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px){
+    .portfolio{
+        .project{
+            // .project-imageContainer{
 
+            // }
+            .project-details{
+                font-size: 12px;
+            }
+        }
+    }
+    .event-list{
+        .event{
+            .event-detail{
+                // 1em = 16px
+                margin: -2em .5em .5em;
+                padding: 1em;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 320px){

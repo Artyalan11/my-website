@@ -63,10 +63,15 @@ h2{
             margin: 0 0 10px 0;
         }
         .project-details{
-            width: 500px;
+            width: 50%;
         }
         .project-imageContainer{
-            width: 500px;
+            width: 50%;
+            margin: 0;
+            img{
+                max-width: 100%;
+                width: 100%;
+            }
         }
         .project-course, .project-date, .project-url{
             margin: 10px 0;
@@ -89,8 +94,8 @@ h2{
     display: flex;
     flex-wrap: wrap;
     .event{
-        margin: 10px;
-        width: 480px;
+        margin: 1%;
+        width: 48%;
         border-radius: 10px;
         overflow: hidden;
         flex-shrink: 0; //ocupan el tamaño designado , no apachurrarse
