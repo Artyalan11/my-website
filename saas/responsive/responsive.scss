@@ -1,6 +1,9 @@
 // Si empiezas con desktop first empieza con la mayor resolucion 
 
 @media screen and (max-width: 1024px){
+    .container{
+        padding: 0 1em;
+    }
     
 }
 
@@ -91,8 +94,36 @@
             }
         }
     }
+    .contact{
+        height: auto;
+        padding: 1em 0;
+        text-align: center; //No funciona si el elemento tiene display flex
+        display: block;
+        .form-email{
+            input{
+                &.button{
+                    margin: 1em auto;
+                }
+            }
+            h3{
+                margin-top: 0;
+            }
+        }
+    }
+    .footer{
+        display: block;
+        text-align: center;
+        border: 1px solid transparent;
+    }
 }
 
 @media screen and (max-width: 320px){
-
+    .contact{
+        .social{
+            .social-link{
+                display: block;
+                margin: 1.5em auto;
+            }
+        }
+    }
 }
