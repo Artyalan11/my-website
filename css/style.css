@@ -251,7 +251,25 @@ h2 {
 
 @media screen and (max-width: 1024px) {
   .container {
-    padding: 0 1em; } }
+    padding: 0 1em; }
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em; }
+    .hero h1 {
+      font-size: 2em;
+      z-index: 2; }
+    .hero .hero-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      width: 100%;
+      -o-object-position: center 25%;
+      object-position: center 25%; } }
 
 @media screen and (max-width: 767px) {
   .header {
@@ -298,6 +316,8 @@ h2 {
       width: 100%; } }
 
 @media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5em; }
   .portfolio .project .project-details {
     font-size: 12px; }
   .event-list .event .event-detail {
@@ -318,6 +338,11 @@ h2 {
     border: 1px solid transparent; } }
 
 @media screen and (max-width: 320px) {
+  .hero {
+    padding: 2em 1em; }
+    .hero h1 {
+      font-size: 1.2em;
+      background: rgba(0, 0, 0, 0.5); }
   .contact .social .social-link {
     display: block;
     margin: 1.5em auto; } }
