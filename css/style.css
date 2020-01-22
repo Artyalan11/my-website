@@ -139,7 +139,9 @@ h2 {
     height: 50px;
     display: inline-block;
     background-size: 50px 50px;
-    margin: 0 10px; }
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff; }
     .contact .social .social-link.twitter {
       background-image: url(../img/twitter.svg); }
     .contact .social .social-link.facebook {
@@ -148,6 +150,14 @@ h2 {
       background-image: url(../img/github.svg); }
     .contact .social .social-link.instagram {
       background-image: url(../img/instagram.svg); }
+    .contact .social .social-link.icon-twitter {
+      font-size: 54px; }
+    .contact .social .social-link.icon-facebook {
+      font-size: 54px; }
+    .contact .social .social-link.icon-github {
+      font-size: 54px; }
+    .contact .social .social-link.icon-instagram {
+      font-size: 54px; }
   .contact .form-email h3 {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: bold; }

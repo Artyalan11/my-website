@@ -138,12 +138,15 @@ h2{
  justify-content: space-between;
  flex-wrap: wrap;
  .social{
+
      .social-link{
          width: 50px;
          height: 50px;
          display: inline-block;
          background-size: 50px 50px;
          margin: 0 10px;
+         text-decoration: none;
+         color: $white;
          &.twitter{
              background-image: url(../img/twitter.svg);
          }
@@ -155,6 +158,18 @@ h2{
          }
          &.instagram{
              background-image: url(../img/instagram.svg);
+         }
+         &.icon-twitter{
+             font-size: 54px;
+         }
+         &.icon-facebook{
+             font-size: 54px;
+         }
+         &.icon-github{
+             font-size: 54px;
+         }
+         &.icon-instagram{
+             font-size: 54px;
          }
      }
  }
