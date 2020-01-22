@@ -1,0 +1,97 @@
+@media screen and (max-width: 1024px) {
+  .container {
+    padding: 0 1em; }
+  .hero {
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    padding: 2em; }
+    .hero h1 {
+      font-size: 2em;
+      z-index: 2; }
+    .hero .hero-image {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      width: 100%;
+      -o-object-position: center 25%;
+      object-position: center 25%; } }
+
+@media screen and (max-width: 767px) {
+  .header {
+    display: block;
+    height: auto; }
+    .header .menu ul {
+      display: block; }
+      .header .menu ul li {
+        height: 50px;
+        text-align: center; }
+        .header .menu ul li a {
+          -webkit-box-pack: center;
+          -ms-flex-pack: center;
+          justify-content: center; }
+    .header .logo {
+      text-align: center; }
+  .portfolio .project {
+    display: block; }
+    .portfolio .project .project-imageContainer {
+      width: auto;
+      text-align: center; }
+    .portfolio .project .project-details {
+      width: auto;
+      font-size: 16px; }
+      .portfolio .project .project-details .project-title {
+        font-size: 1.5em;
+        margin-bottom: 0.3em; }
+      .portfolio .project .project-details .project-url {
+        font-size: 1em;
+        margin: .4em 0; }
+      .portfolio .project .project-details .project-course {
+        font-size: 1em;
+        margin: .4em 0; }
+      .portfolio .project .project-details .project-date {
+        font-size: 0.7em;
+        margin: .4em 0; }
+      .portfolio .project .project-details .project-description {
+        font-size: 0.8em; }
+  .event-list .event {
+    width: auto;
+    -ms-flex-negative: initial;
+    flex-shrink: initial; }
+    .event-list .event .event-imageContainer .event-image {
+      width: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5em; }
+  .portfolio .project .project-details {
+    font-size: 12px; }
+  .event-list .event .event-detail {
+    margin: -2em .5em .5em;
+    padding: 1em; }
+  .contact {
+    height: auto;
+    padding: 1em 0;
+    text-align: center;
+    display: block; }
+    .contact .form-email input.button {
+      margin: 1em auto; }
+    .contact .form-email h3 {
+      margin-top: 0; }
+  .footer {
+    display: block;
+    text-align: center;
+    border: 1px solid transparent; } }
+
+@media screen and (max-width: 320px) {
+  .hero {
+    padding: 2em 1em; }
+    .hero h1 {
+      font-size: 1.2em;
+      background: rgba(0, 0, 0, 0.5); }
+  .contact .social .social-link {
+    display: block;
+    margin: 1.5em auto; } }
