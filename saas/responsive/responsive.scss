@@ -54,6 +54,23 @@
         display: block;
         height: auto;
         .menu{
+            position: fixed;
+            background: rgba($light-blue, 0.9);
+            z-index: 3;
+            top: 0;
+            left: -100vw;
+            bottom: 0;
+            width: 100vw;
+            // height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: .3s;
+            &.active{
+                left: 0;
+
+            }
+
             ul{
                 display: block;
                 li{
@@ -61,6 +78,10 @@
                     text-align: center;
                     a {
                         justify-content: center;
+                        height: 40px;
+                        font-size: 2em;
+                        text-decoration: underline;
+                        margin-bottom: .5em;
                     }
                 }
             }
