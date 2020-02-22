@@ -23,6 +23,8 @@ function validation(event){ //funcion validation: para detener o ejecutar la fun
     }
 }
 
+validation(ipad); //Mandas a llamar la función de validación con el argumento de ipad, esto hace que se ejecute el script para la funcionaldiad del botón movil, mientras cumpla el criterio de 767px
+
 function hideShow() {
     if (menu.classList.contains('active')) {
         menu.classList.remove('active');

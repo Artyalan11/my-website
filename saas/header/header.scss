@@ -6,12 +6,12 @@
     height: 70px;
     align-items: center;
     flex-wrap: wrap;
-    .menu{
+    .menu{ 
         height: inherit;
         ol,ul{
             margin: 0;
             padding: 0;
-            list-style: none;
+            list-style: none; 
             display: flex;
             height: inherit;
             li{
